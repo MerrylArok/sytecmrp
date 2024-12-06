@@ -1,0 +1,16 @@
+1. First make sure node and npm are installed/ updated
+2. Setup new project with vite => npm create vite@latest .(here the . is to say just create the project in current directory, dont make another one here
+3. Used Typescript with SWC (Speedy Web Compiler)
+4. npm install and then npm run dev
+5. Setup Supabase
+6. Install @supabase/supabase-js, @supabase/auth-ui-react, @supabase/auth-ui-shared
+7. git init and then touch .gitignore 
+8. touch .env and .env.example
+9. Add .env to gitignore
+10. Add supbase variables (project url and api anon key) to env. This is for dev only and we need to setup this directly in the server for production.
+11. Create env.d.ts in the src folder 	(this will help load the env variables from the env file using Vite, expose Vites functionality and recognize import.meta.env)
+12. Create folders under src to start organizing components (src/components/...)
+13. Create AuthTest component to check if the env variables are loaded properly and if the supbase connection works
+14. Decided to use shadcn
+15. Generated a test Auth componenet
+16. SQL commands in supabase to initialize roles, user, dept and user-dept table schema,  lock them with with Row Level Security and create policies as to who can update them.
